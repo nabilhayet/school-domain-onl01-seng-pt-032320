@@ -14,12 +14,8 @@ class School
   end 
 end 
   def grade(grade)
-  @roster.map do |key,value|
-  if grade==key
-    @roster[key]
+    @roster[grade]
   end 
-end 
-end 
 
  def sort 
    @roster.sort 
