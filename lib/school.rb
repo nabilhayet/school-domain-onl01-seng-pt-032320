@@ -18,6 +18,8 @@ end
   end 
 
  def sort 
-   @roster.sort 
+   @roster.collect do |key,value|
+     @roster[key]=value.sort
  end 
+ @roster
 end 
